@@ -1,7 +1,7 @@
 # Python Pandas Data 
 
 ## Hubway Database Analysis
-Dataset from the bike-sharing service Hubway (data on over 1.5 million trips made with the service). Used Python to run SQL code to make it easier to display results.
+Database from the bike-sharing service Hubway (data on over 1.5 million trips made with the service). Used Python to run SQL code to make it easier to display results.
 
 ### Analysis
 * What was the duration of the longest trip?
