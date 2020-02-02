@@ -1,6 +1,10 @@
 # Data Analysis
 
-### 1. Hubway Database Analysis
+
+### Avocado Prices
+Dataset from [!Kaggle](https://www.kaggle.com/neuromusic/avocado-prices/data)
+
+### Hubway Database
 Database from the bike-sharing service Hubway (data on over 1.5 million trips made with the service). Used Python to run SQL code to make it easier to display results on Jupyter Notebook.
 
 #### Analysis
@@ -19,7 +23,7 @@ Database from the bike-sharing service Hubway (data on over 1.5 million trips ma
 * Which municipality had the longest average duration?
 
 
-### 2. Sales Dataset Analysis
+### Sales Dataset
 #### What did I do with the data?
 * Analyzed 12 months of sales data using Python Pandas and Matplotlib.
 * Combined 12 months of CSV files into a single file
