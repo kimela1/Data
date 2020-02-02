@@ -1,6 +1,6 @@
 # Python Pandas Data 
 
-## Hubway Dataset Analysis
+## Hubway Database Analysis
 Dataset from the bike-sharing service Hubway (data on over 1.5 million trips made with the service). Used Python to run SQL code to make it easier to display results.
 
 ### Analysis
@@ -19,7 +19,7 @@ Dataset from the bike-sharing service Hubway (data on over 1.5 million trips mad
 * Which municipality had the longest average duration?
 
 
-## Sales
+## Sales Dataset Analysis
 ### What did I do with the data?
 * Analyzed 12 months of sales data using Python Pandas and Matplotlib.
 * Combined 12 months of CSV files into a single file
