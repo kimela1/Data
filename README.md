@@ -3,7 +3,7 @@
 ## 1. Hubway Database Analysis
 Database from the bike-sharing service Hubway (data on over 1.5 million trips made with the service). Used Python to run SQL code to make it easier to display results on Jupyter Notebook.
 
-### Analysis
+#### Analysis
 * What was the duration of the longest trip?
 * How many trips were taken by 'registered' users?
 * What was the average trip duration?
@@ -20,13 +20,13 @@ Database from the bike-sharing service Hubway (data on over 1.5 million trips ma
 
 
 ## 2. Sales Dataset Analysis
-### What did I do with the data?
+#### What did I do with the data?
 * Analyzed 12 months of sales data using Python Pandas and Matplotlib.
 * Combined 12 months of CSV files into a single file
 * Cleaned up data (drop rows with NaN, convert to correct data types)
 * Added additional columns to help understand the data
 
-### Analysis
+#### Analysis
 * Which month had the most sales? How much was earned that month?
 * Which city had the highest number of sales?
 * What is the best time to display advertisements to maximize the likelihood of customers buying product?
