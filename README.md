@@ -1,7 +1,17 @@
 # Data Analysis
 
+## SQL
+
+### Films
+Query practice
+
 ### Hubway
 Database from the bike-sharing service Hubway (data on over 1.5 million trips made with the service). Used Python to run SQL code to make it easier to display results on Jupyter Notebook.
+
+### Planets and People
+Query practice
+
+## Notebooks
 
 ### Plot Practice
 Practice creating line graphs of global gas price data over time. Added titles, x & y axis labels, and scaled the graphs.  Customized the style and size of the charts. Looked at the FIFA 19 player data to create a histogram, pie charts, and a box and whisker plot.
