@@ -1,15 +1,4 @@
-# Data Analysis
-
-## SQL
-
-### Films
-Query practice
-
-### Hubway
-Database from the bike-sharing service Hubway (data on over 1.5 million trips made with the service). Used Python to run SQL code to make it easier to display results on Jupyter Notebook.
-
-### Planets and People
-Query practice
+# Data
 
 ## Notebooks
 
@@ -25,4 +14,3 @@ Practice creating line graphs of global gas price data over time. Added titles, 
 ### Titanic
 Created sheets and a dashboard on Tableau to visualize the data.
 Dataset from [Kaggle](https://www.kaggle.com/c/titanic/data)
-
