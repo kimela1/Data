@@ -3,12 +3,16 @@
 
 # # Sales Analysis
 
+# Using Python Pandas & Python Matplotlib to analyze and answer business questions about 12 months worth of sales data The data contains hundreds of thousands of electronics store purchases broken down by month, product type, cost, purchase address, etc.
+
 # In[1]:
 
 
 import pandas as pd
 import os
 
+
+# ## Fetching data
 
 # #### Merge 12 months of sales data into a single CSV file
 
@@ -28,7 +32,7 @@ for file in files:
 all_months_data.to_csv("all_data.csv", index=False)
 
 
-# #### Read in updated dataframe
+# #### Read in Data
 
 # In[3]:
 
@@ -37,7 +41,7 @@ all_data = pd.read_csv("all_data.csv")
 all_data.head()
 
 
-# ### Clean up data
+# ## Data Cleaning
 
 # #### Drop rows with NaN and reset index
 
@@ -68,8 +72,6 @@ all_data = all_data[all_data['Order Date'].str[0:2] != 'Or']
 all_data['Quantity Ordered'] = pd.to_numeric(all_data['Quantity Ordered']) # Make int
 all_data['Price Each'] = pd.to_numeric(all_data['Price Each']) # Make float
 
-
-# ### Augment data with additional columns
 
 # #### Add month column
 
@@ -107,6 +109,8 @@ all_data['Purchase City'] = all_data['Purchase Address'].apply(lambda x: get_cit
 all_data.head()
 
 
+# ## Exploratory Data Analysis
+
 # ### Which month had the most sales? How much was earned that month?
 
 # In[10]:
@@ -132,6 +136,10 @@ plt.xlabel('Month')
 plt.show()
 
 
+# Interpreting the results:
+# * December has the most sales (most likely because of the holidays).
+# * The store earned $4,613,443 in December.
+
 # ### Which city had the highest number of sales?
 
 # In[12]:
@@ -156,6 +164,10 @@ plt.ylabel('Sales in USD ($)')
 plt.xlabel('City name')
 plt.show()
 
+
+# Interpreting the results:
+# * San Francisco, CA has the highest number of sales.
+# * There were 8,262,204 sales in San Francisco.
 
 # ### What is the best time to display advertisements to maximize the likelihood of customers buying product?
 
@@ -189,7 +201,11 @@ plt.grid()
 plt.show()
 
 
-# ### Which products are most often sold together?
+# Interpreting the results:
+# * There are peaks at around 11:00 and 19:00.
+# * The best time to display advertisements would be around 11:00 and 19:00.
+
+# ### Which products are often sold together?
 
 # In[31]:
 
@@ -223,6 +239,10 @@ for key,value in count.most_common(10):
     print(key, value)
 
 
+# Interpreting the results:
+# * iPhones and Lightning Charging Cables are frequently sold together (this combination appeared 1005 times)
+# * Google Phones and USB-C Charging Cables are also frequently sold together (this combination appeared 987 times)
+
 # ### Which products sold the most?
 
 # In[36]:
@@ -238,6 +258,10 @@ plt.ylabel('Quantity Ordered')
 plt.xlabel('Product')
 plt.show()
 
+
+# Interpreting the results:
+# * AAA Batteries (4-pack) were ordered the most while AA Batteries (4-pack) had the second highest quantity ordered.
+# * The LG Dryer and Washing Machine had the lowest quantity ordered.
 
 # ### Is there a correlation between a product's price and the quantity ordered?
 
@@ -260,6 +284,18 @@ ax1.set_xticklabels(keys, rotation='vertical', size=8)
 
 fig.show()
 
+
+# Interpreting the results:
+# * Cheaper items like batteries and lightning cables sold much more than more expensive items like a TV and dryer. 
+# * Although laptops are more expensive than home appliances, the Macbook Pro Laptop and ThinkPad Laptop had a higher quantity ordered than the LG Dryer and Washing Machine. This may be because more people need a laptop than a dryer or washing machine.
+
+# ## Conclusion
+
+# 1. December had the highest number of sales and thus, earned the most. This is probably due to the holiday season.
+# 2. San Francisco, CA had the highest number of sales.
+# 3. Most of the orders are made around 11:00 and 19:00 so having advertisements around these times would be the most effective.
+# 4. iPhones and charging cables as well as Google Phones and charging cables are frequently sold together. 
+# 5. Cheaper items like AA and AAA batteries sold the most while more expensive items like a dryer and washing machine sold the least.
 
 # In[ ]:
 
