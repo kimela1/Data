@@ -10,7 +10,7 @@ View workbook on Tableau public [here](https://public.tableau.com/profile/elaine
 
 ### Titanic
 Created sheets and a dashboard on Tableau to visualize the data.
-Dataset from [Kaggle](https://www.kaggle.com/c/titanic/data)
+View workbook on Tableau public [here](https://public.tableau.com/profile/elaine2327#!/vizhome/titanic_15825289727700/Dashboard1) Dataset is from [Kaggle](https://www.kaggle.com/c/titanic/data).
 
 # Jupyter Notebook
 
