@@ -1,6 +1,6 @@
 # Factors Affecting Campus Recruitment
 
-This data set consists of Placement data of students at studying to receive their MBA in Business Analytics at Jain University Bangalore. It includes secondary and higher secondary school percentage and specialization. It also includes degree specialization, type and Work experience and salary offers to the placed students
+This data set consists of Placement data of students at studying to receive their MBA in Business Analytics at Jain University Bangalore. It includes secondary and higher secondary school percentage and specialization. It also includes degree specialization, type, work experience, and salary offers to the placed students.
 
 View dashboard on Tableau public [here](). Dataset from [Kaggle](https://www.kaggle.com/benroshan/factors-affecting-campus-placement)
 
